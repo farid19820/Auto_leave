@@ -1,4 +1,5 @@
 package com.example.autoleave;
+//git add . && git commit -m "xxx" && git push origin master
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
