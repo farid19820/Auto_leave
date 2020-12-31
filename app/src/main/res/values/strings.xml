@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Auto Leave</string>
+    <string name="my_color">Color</string>
+    <string name="wheel_hint1">Wheel</string>
+
 </resources>

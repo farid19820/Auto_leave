@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin1">10dp</dimen>
+    <dimen name="margin2">7dp</dimen>
+    <dimen name="margin3">5dp</dimen>
+    <dimen name="layout_height1">5dp</dimen>
+    <dimen name="custom_car_iv_high">100</dimen>
+    <dimen name="text_size_title_view_card" />
+    <dimen name="text_size_content_view_card">14</dimen>
+
+
+    layout_height
+</resources>

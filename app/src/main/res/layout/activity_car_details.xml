@@ -9,7 +9,6 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
-
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -19,7 +18,9 @@
             app:contentScrim="@color/primary"
             app:expandedTitleMarginStart="10dp"
             app:expandedTitleMarginEnd="26dp"
-            app:layout_scrollFlags="scroll">
+
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
 
             <ImageView
                 android:layout_width="match_parent"
@@ -27,13 +28,23 @@
                 android:contentDescription="@string/app_name"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
                 android:src="@drawable/logomain">
 
             </ImageView>
             <androidx.appcompat.widget.Toolbar
+                android:id="@+id/title"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/material_emphasis_high_type">
-
+                app:layout_collapseMode="pin"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:text="Mercedes Benz"/>
             </androidx.appcompat.widget.Toolbar>
 
 
@@ -41,5 +52,191 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarFadeDuration="300"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin1"
+            android:orientation="vertical"
+            android:scrollbarDefaultDelayBeforeFade="450">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="Details"
+
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+
+            <com.example.autoleave.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.example.autoleave.MyTextView>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin1"
+                android:hint="Price"
+                android:id="@+id/price"
+                android:inputType="number">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Model"
+                android:id="@+id/model"
+                android:inputType="number">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Gear Type"
+                android:id="@+id/gear_type"
+                android:inputType="text">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Year"
+                android:id="@+id/year"
+                android:inputType="date">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Killometers"
+                android:id="@+id/killometers"
+                android:inputType="number">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Engine Capacity"
+                android:id="@+id/engine_capacity"
+                android:inputType="number">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Color"
+                android:id="@+id/color"
+                android:inputType="text">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Body Type"
+                android:id="@+id/body_type"
+                android:inputType="text">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Tire Type"
+                android:id="@+id/tire_type"
+                android:inputType="text">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Wheel"
+                android:id="@+id/wheel"
+                android:inputType="number">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin3"
+                android:hint="Extra Features"
+                android:id="@+id/extra_features"
+                android:inputType="textLongMessage">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="User Name"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="saveData"
+                android:layout_marginEnd="10dp"
+                android:text="save"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btn_submit"
+                android:layout_marginBottom="60dp"
+                android:text="Submit"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_height="70dp">
+
+            </Button>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

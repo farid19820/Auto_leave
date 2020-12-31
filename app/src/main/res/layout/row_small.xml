@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:elevation="4dp"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/custem_car_iv"
+            android:layout_width="350dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/custem_car_iv" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_car01"
+            android:padding="10dp"
+            android:text="1600 cc"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custem_car_iv" />
+
+        <TextView
+            android:id="@+id/tv_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:padding="10dp"
+            android:text="Price"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custem_car_iv" />
+
+        <TextView
+            android:id="@+id/tv_title4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:padding="10dp"
+            android:text="375.000 LE"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toEndOf="@+id/tv_title3"
+            app:layout_constraintTop_toBottomOf="@+id/custem_car_iv" />
+
+        <TextView
+            android:id="@+id/tv_content2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_image01"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="Automatic"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.944"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custem_car_iv"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <TextView
+            android:id="@+id/tv_content3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_image01"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="2020"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_content2"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintTop_toBottomOf="@+id/custem_car_iv"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="92dp"
+            android:text="Mercedes C Class"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoLeave">
-        <activity android:name=".CarDetails"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".PreviewAdd"></activity>
+        <activity android:name=".NoDriver" />
+        <activity android:name=".Driver" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CarDetails" />
+        <activity android:name=".LoadingStart">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
