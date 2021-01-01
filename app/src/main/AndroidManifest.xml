@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoLeave">
-        <activity android:name=".PreviewAdd"></activity>
+        <activity android:name=".categoryMain"></activity>
+        <activity android:name=".PreviewAdd" />
         <activity android:name=".NoDriver" />
         <activity android:name=".Driver" />
         <activity android:name=".MainActivity" />

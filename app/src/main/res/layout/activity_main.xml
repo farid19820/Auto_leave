@@ -16,9 +16,10 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="55dp"
             android:background="@color/colorAccent"
             android:gravity="center"
+            android:textColor="@color/textColor2"
             android:text="Autoleave"
             android:textSize="24dp">
 
@@ -39,20 +40,24 @@
             <Button
                 android:id="@+id/btn_nodriver"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="55dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="@color/colorAccent"
+                android:textColor="@color/textColor2"
+
                 android:text="No Driver"
                 android:textSize="14sp" />
 
             <Button
                 android:id="@+id/btn_driver"
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="55dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="@color/colorAccent"
+                android:textColor="@color/textColor2"
+
                 android:text="Driver"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -82,6 +87,8 @@
         android:layout_margin="@dimen/margin1"
         android:backgroundTint="@color/primary_dark"
         android:onClick="openDetails"
-        android:src="@drawable/ic_car01"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        android:src="@drawable/ic_car01">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

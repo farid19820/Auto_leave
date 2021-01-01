@@ -19,7 +19,7 @@ public class LoadingStart extends AppCompatActivity {
             public void onClick(View v) { OpenMainActivity(); }
 
             public void OpenMainActivity() {
-                Intent intent = new Intent(getBaseContext(),MainActivity.class);
+                Intent intent = new Intent(getBaseContext(),categoryMain.class);
                 startActivity(intent);
             }
         });

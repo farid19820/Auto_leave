@@ -61,12 +61,12 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<HomeCarAll> homeCarAlls = new ArrayList<>();
 
-        homeCarAlls.add(new HomeCarAll(R.drawable.c17,"1600cc"));
-        homeCarAlls.add(new HomeCarAll(R.drawable.c12,"1600cc"));
-        homeCarAlls.add(new HomeCarAll(R.drawable.c18,"1600cc"));
-        homeCarAlls.add(new HomeCarAll(R.drawable.c19,"1600cc"));
-        homeCarAlls.add(new HomeCarAll(R.drawable.c12,"1600cc"));
-        homeCarAlls.add(new HomeCarAll(R.drawable.c17,"1600cc"));
+        homeCarAlls.add(new HomeCarAll(R.drawable.c17,"أجر سيارتك المفضلة بأفضل .. سعر لدواعي السفر سعر"));
+        homeCarAlls.add(new HomeCarAll(R.drawable.c12,"The Best Car for BMW 2020 yes you can now"));
+        homeCarAlls.add(new HomeCarAll(R.drawable.c18,"The Best Car for BMW 2020 yes you can now"));
+        homeCarAlls.add(new HomeCarAll(R.drawable.c19,"The Best Car for BMW 2020 yes you can now"));
+        homeCarAlls.add(new HomeCarAll(R.drawable.c12,"The Best Car for BMW 2020 yes you can now"));
+        homeCarAlls.add(new HomeCarAll(R.drawable.c17,"The Best Car for BMW 2020 yes you can now"));
 
         AdabterRecycleHome adabterRecycleHome = new AdabterRecycleHome (homeCarAlls);
         binding.mainRv.setHasFixedSize(true);
