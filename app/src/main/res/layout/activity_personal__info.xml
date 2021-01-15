@@ -1,9 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Personal_Info">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ownerInformationText"
+            android:text="Owner information"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B33434"
+            android:layout_marginTop="20dp"
+            android:id="@+id/addCityText"
+            android:text="Add City"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_city"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/shape_strok_bottun"
+            android:entries="@array/city" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B33434"
+            android:layout_marginTop="10dp"
+            android:id="@+id/addAreaText"
+            android:text="Add Area"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_area"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/shape_strok_bottun"
+            android:entries="@array/city" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B33434"
+            android:id="@+id/nameText"
+            android:text="Name"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin3"
+            android:hint="Mohamed Farid"
+            android:id="@+id/nameInput"
+            android:background="@drawable/shape_strok_bottun"
+            android:padding="8dp"
+            android:inputType="text">
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B33434"
+            android:id="@+id/emailText"
+            android:text="Email"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin3"
+            android:hint="jodicar.com@gmail.com"
+            android:id="@+id/emailInput"
+            android:background="@drawable/shape_strok_bottun"
+            android:padding="8dp"
+            android:inputType="textEmailAddress">
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B33434"
+            android:id="@+id/phoneNumberText"
+            android:text="Phone Number"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin3"
+            android:hint="01xxxxxxxxx"
+            android:padding="8dp"
+            android:id="@+id/phoneNumberInput"
+            android:background="@drawable/shape_strok_bottun"
+            android:inputType="phone">
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B33434"
+            android:id="@+id/contactMeText"
+            android:text="Contact me by"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/contactMeRadioGroup"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Phone"
+                android:layout_margin="5dp"
+                android:id="@+id/byPhone"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Email"
+                android:id="@+id/byEmail"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"/>
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Both"
+                android:id="@+id/byBoth"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

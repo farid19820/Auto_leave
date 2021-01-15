@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.autoleave.activities.categoryMain;
+
 public class LoadingStart extends AppCompatActivity {
 
     @Override
@@ -19,7 +21,7 @@ public class LoadingStart extends AppCompatActivity {
             public void onClick(View v) { OpenMainActivity(); }
 
             public void OpenMainActivity() {
-                Intent intent = new Intent(getBaseContext(),categoryMain.class);
+                Intent intent = new Intent(getBaseContext(), categoryMain.class);
                 startActivity(intent);
             }
         });

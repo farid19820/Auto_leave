@@ -3,4 +3,295 @@
     <string name="my_color">Color</string>
     <string name="wheel_hint1">Wheel</string>
 
+    <string-array name="brand">
+        <item>Choose</item>
+        <item>Alfa Romeo</item>
+        <item>Opel</item>
+        <item>Audi</item>
+        <item>Idea</item>
+        <item>Isuzu</item>
+        <item>Speranza</item>
+        <item>MG</item>
+        <item>Infinity</item>
+        <item>Eagle</item>
+        <item>Proton</item>
+        <item>Brilliance</item>
+        <item>Bentley</item>
+        <item>Porsche</item>
+        <item>Pontiac</item>
+        <item>Buick</item>
+        <item>Bmw</item>
+        <item>Byd</item>
+        <item>Peugeot</item>
+        <item>Perodua</item>
+        <item>Tesla</item>
+        <item>Toyota</item>
+        <item>Jaguar</item>
+        <item>Jac</item>
+        <item>Great Wall</item>
+        <item>Gmc</item>
+        <item>Jeep</item>
+        <item>Jeely</item>
+        <item>Gen</item>
+        <item>Datchia</item>
+        <item>Daihatsu</item>
+        <item>Daewoo</item>
+        <item>Dodge</item>
+        <item>Range Rover</item>
+        <item>Rose Rise</item>
+        <item>Renault</item>
+        <item>Zotye</item>
+        <item>Saap</item>
+        <item>Samsung</item>
+        <item>Sang Yong</item>
+        <item>Soueast</item>
+        <item>Saipa</item>
+        <item>Cetroen</item>
+        <item>Skoda</item>
+        <item>Smart</item>
+        <item>Subaru</item>
+        <item>Suzuki</item>
+        <item>Seat</item>
+        <item>Senova</item>
+        <item>Chana</item>
+        <item>Changan</item>
+        <item>Changhe</item>
+        <item>Shaheen</item>
+        <item>Chery</item>
+        <item>Chevrolet</item>
+        <item>Faw</item>
+        <item>Ford</item>
+        <item>Volvo</item>
+        <item>Volkswagen</item>
+        <item>Fiat</item>
+        <item>Ferrari</item>
+        <item>Cadillac</item>
+        <item>Chrysler</item>
+        <item>komodo</item>
+        <item>Kia</item>
+        <item>Lada</item>
+        <item>Land Rover</item>
+        <item>Lancia</item>
+        <item>Lexus</item>
+        <item>lifan</item>
+        <item>Lincoln</item>
+        <item>Maple</item>
+        <item>Mazda</item>
+        <item>Maserati</item>
+        <item>Mahindra</item>
+        <item>Mercedes</item>
+        <item>Mitsubishi</item>
+        <item>Mercury</item>
+        <item>Mini</item>
+        <item>Noble</item>
+        <item>Nissan</item>
+        <item>Heavy</item>
+        <item>Hummer</item>
+        <item>Hawtai</item>
+        <item>Haima </item>
+        <item>Honda</item>
+        <item>Huandai</item>
+
+    </string-array>
+
+    <string-array name="StyleCar">
+        <item>Sedan</item>
+        <item>SUV</item>
+        <item>4X4</item>
+        <item>Hatchback</item>
+        <item>Cross Over</item>
+
+    </string-array>
+
+    <string-array name="Period">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Year</item>
+
+    </string-array>
+
+
+    <string-array name="month">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>june</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+
+    <string-array name="year">
+        <item>Year</item>
+        <item>1900</item>
+        <item>1901</item>
+        <item>1902</item>
+        <item>1903</item>
+        <item>1904</item>
+        <item>1905</item>
+        <item>1906</item>
+        <item>1907</item>
+        <item>1908</item>
+        <item>1910</item>
+        <item>1911</item>
+        <item>1912</item>
+        <item>1913</item>
+        <item>1914</item>
+        <item>1915</item>
+        <item>1916</item>
+        <item>1917</item>
+        <item>1918</item>
+        <item>1919</item>
+        <item>1920</item>
+        <item>1921</item>
+        <item>1922</item>
+        <item>1923</item>
+        <item>1924</item>
+        <item>1925</item>
+        <item>1926</item>
+        <item>1927</item>
+        <item>1928</item>
+        <item>1929</item>
+        <item>1930</item>
+        <item>1931</item>
+        <item>1931</item>
+        <item>1932</item>
+        <item>1933</item>
+        <item>1934</item>
+        <item>1935</item>
+        <item>1936</item>
+        <item>1937</item>
+        <item>1938</item>
+        <item>1939</item>
+        <item>1940</item>
+        <item>1941</item>
+        <item>1942</item>
+        <item>1943</item>
+        <item>1944</item>
+        <item>1945</item>
+        <item>1946</item>
+        <item>1947</item>
+        <item>1948</item>
+        <item>1949</item>
+        <item>1950</item>
+        <item>1951</item>
+        <item>1952</item>
+        <item>1953</item>
+        <item>1954</item>
+        <item>1955</item>
+        <item>1956</item>
+        <item>1957</item>
+        <item>1958</item>
+        <item>1959</item>
+        <item>1960</item>
+        <item>1961</item>
+        <item>1962</item>
+        <item>1963</item>
+        <item>1964</item>
+        <item>1965</item>
+        <item>1966</item>
+        <item>1967</item>
+        <item>1968</item>
+        <item>1969</item>
+        <item>1970</item>
+        <item>1971</item>
+        <item>1972</item>
+        <item>1973</item>
+        <item>1974</item>
+        <item>1975</item>
+        <item>1976</item>
+        <item>1977</item>
+        <item>1978</item>
+        <item>1979</item>
+        <item>1980</item>
+        <item>1981</item>
+        <item>1982</item>
+        <item>1983</item>
+        <item>1984</item>
+        <item>1985</item>
+        <item>1986</item>
+        <item>1987</item>
+        <item>1988</item>
+        <item>1989</item>
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+
+    </string-array>
+
+    <string-array name="category">
+        <item> >> Category >>  </item>
+        <item> >> Car For Sale</item>
+        <item> >> Car For Rent >> With out Driver</item>
+        <item> >> Car For Rent >> With Driver</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>Choose City</item>
+        <item>Alexandria</item>
+        <item>Aswan</item>
+        <item>Asyut</item>
+        <item>Beheira</item>
+        <item>Beni Suef</item>
+        <item>Cairo</item>
+        <item>Dakahlia</item>
+        <item>Damietta</item>
+        <item>Faiyum</item>
+        <item>Ismailia</item>
+        <item>Kafr El Sheikh</item>
+        <item>Luxor</item>
+        <item>Matruh</item>
+        <item>Minya</item>
+        <item>Monufia</item>
+        <item>New Valley</item>
+        <item>North Sinai</item>
+        <item>Port Said</item>
+        <item>Qalyubia</item>
+        <item>Qena</item>
+        <item>Red Sea</item>
+        <item>Sharqia</item>
+        <item>Sohag</item>
+        <item>South Sinai</item>
+        <item>Suez</item>
+
+    </string-array>
+
 </resources>

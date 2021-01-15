@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.autoleave">
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
@@ -9,12 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoLeave">
-        <activity android:name=".categoryMain"></activity>
+        <activity android:name=".Personal_Info"></activity>
+        <activity android:name=".activities.categoryMain" />
         <activity android:name=".PreviewAdd" />
         <activity android:name=".NoDriver" />
         <activity android:name=".Driver" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".CarDetails" />
+        <activity android:name=".AddVehicleFormat" />
         <activity android:name=".LoadingStart">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

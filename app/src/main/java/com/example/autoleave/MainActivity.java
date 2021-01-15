@@ -1,18 +1,16 @@
 package com.example.autoleave;
-//git add . && git commit -m "xxx" && git push origin master
+//git add . && git commit -m "15jan" && git push origin master
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.autoleave.adapters.AdabterRecycleHome;
 import com.example.autoleave.databinding.ActivityMainBinding;
+import com.example.autoleave.model.HomeCarAll;
 
 import java.util.ArrayList;
 
@@ -26,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getWindow().setStatusBarColor(getResources().getColor(R.color.primary));
-      //  Toolbar tl = findViewById(R.id.title);
-     //   setSupportActionBar(tl);
+      //Toolbar tl = findViewById(R.id.title);
+     //setSupportActionBar(tl);
 
                 // 2 button driver and no driver
              Button btnDriver = (Button)findViewById(R.id.btn_driver);
@@ -75,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openDetails(View view) {
-        startActivity(new Intent(this , CarDetails.class));
+        startActivity(new Intent(this , AddVehicleFormat.class));
     }
 
     // @Override

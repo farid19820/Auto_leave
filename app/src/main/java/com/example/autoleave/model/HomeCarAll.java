@@ -1,4 +1,4 @@
-package com.example.autoleave;
+package com.example.autoleave.model;
 
 public class HomeCarAll {
 

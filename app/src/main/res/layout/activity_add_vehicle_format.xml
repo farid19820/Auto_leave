@@ -5,46 +5,112 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".CarDetails">
+    tools:context=".AddVehicleFormat">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="430dp"
             android:fitsSystemWindows="true"
             app:contentScrim="@color/primary"
             app:expandedTitleMarginStart="10dp"
             app:expandedTitleMarginEnd="26dp"
-
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:contentDescription="@string/app_name"
-                android:fitsSystemWindows="true"
-                android:scaleType="centerCrop"
-                app:layout_collapseMode="parallax"
-                android:src="@drawable/logomain">
+                android:orientation="vertical">
 
-            </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="250dp"
+                    android:src="@drawable/c18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="112dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/image2"
+                        android:contentDescription="@string/app_name"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="3dp"
+                        app:layout_collapseMode="parallax"
+                        android:src="@drawable/logomain">
+                    </ImageView>
+
+
+
+                    <ImageView
+                        android:layout_width="112dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/image3"
+                        android:contentDescription="@string/app_name"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="3dp"
+                        app:layout_collapseMode="parallax"
+                        android:src="@drawable/logomain">
+                    </ImageView>
+
+
+                    <ImageView
+                        android:layout_width="112dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/image4"
+                        android:contentDescription="@string/app_name"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="3dp"
+                        app:layout_collapseMode="parallax"
+                        android:src="@drawable/logomain">
+                    </ImageView>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 app:layout_collapseMode="pin"
-                android:layout_height="50dp"
-                android:layout_gravity="bottom"
-                >
+                android:layout_height="60dp"
+                android:layout_gravity="bottom">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#fff"
                     android:textSize="20sp"
-                    android:text="Add Car for Rent"/>
+                    android:text="Category"/>
+
+
             </androidx.appcompat.widget.Toolbar>
 
 
@@ -94,10 +160,10 @@
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/spinner_Brand"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_margin="6dp"
                 android:background="@drawable/shape_strok_bottun"
-                android:entries="@array/brand" />
+                />
 
 
 
@@ -106,6 +172,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:layout_marginTop="6dp"
                 android:id="@+id/modelText"
                 android:text="Model"/>
 
@@ -114,29 +181,10 @@
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/spinner_Model"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_margin="6dp"
                 android:background="@drawable/shape_strok_bottun"
-                android:entries="@array/brand" />
-
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#B33434"
-                android:id="@+id/styleText"
-                android:text="Style"/>
-
-
-
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/spinner_StyleCar"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="6dp"
-                android:background="@drawable/shape_strok_bottun"
-                android:entries="@array/StyleCar" />
+                 />
 
 
 
@@ -145,12 +193,13 @@
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
                 android:id="@+id/yearText"
+                android:layout_marginTop="6dp"
                 android:text="Year"/>
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/spinner_year"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_margin="6dp"
                 android:background="@drawable/shape_strok_bottun"
                 android:entries="@array/year" />
@@ -163,12 +212,15 @@
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
                 android:id="@+id/kilometerText"
+                android:visibility="gone"
+                android:layout_marginTop="6dp"
                 android:text="Kilometer"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_margin="@dimen/margin3"
                 android:hint="126000 km"
+                android:visibility="gone"
                 android:id="@+id/KilometerInput"
                 android:background="@drawable/shape_strok_bottun"
                 android:padding="8dp"
@@ -180,12 +232,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:layout_marginTop="6dp"
                 android:id="@+id/transsionTypeText"
+                android:visibility="gone"
                 android:text="Transmission Type"/>
             <RadioGroup
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
-                android:id="@+id/killometers"
+                android:id="@+id/transmissionsGroup"
+                android:visibility="gone"
                 android:layout_height="wrap_content">
 
                 <RadioButton
@@ -207,14 +262,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:layout_marginTop="6dp"
                 android:id="@+id/capacityText"
+                android:visibility="gone"
                 android:text="Capacity"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_margin="@dimen/margin3"
                 android:hint="1600 cc"
-                android:id="@+id/Capacity"
+                android:visibility="gone"
+                android:id="@+id/capacity"
                 android:background="@drawable/shape_strok_bottun"
                 android:padding="8dp"
                 android:inputType="number">
@@ -225,7 +283,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:layout_marginTop="6dp"
                 android:id="@+id/licenseExpireText"
+                android:visibility="gone"
                 android:text="License Expire"/>
 
 
@@ -237,20 +297,22 @@
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatSpinner
-                    android:id="@+id/spinner_Date"
+                    android:id="@+id/spinnerDate"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     android:layout_margin="6dp"
+                    android:visibility="gone"
                     android:background="@drawable/shape_strok_bottun"
-                    android:entries="@array/month" />
+                    android:entries="@array/month"/>
 
 
 
                 <androidx.appcompat.widget.AppCompatSpinner
-                    android:id="@+id/spinner_Year"
+                    android:id="@+id/spinnerYear2"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     android:layout_margin="6dp"
+                    android:visibility="gone"
                     android:background="@drawable/shape_strok_bottun"
                     android:entries="@array/year" />
 
@@ -261,25 +323,66 @@
 
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B33434"
+                android:layout_marginTop="6dp"
+                android:id="@+id/pricePeriodText"
+                android:visibility="gone"
+                android:text="price of Period"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutpricePeriod"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_Period"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="6dp"
+                    android:visibility="gone"
+                    android:background="@drawable/shape_strok_bottun"
+                    android:entries="@array/Period" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="6dp"
+                    android:hint="xxxxx EGP"
+                    android:visibility="gone"
+                    android:id="@+id/pricePeriodInput"
+                    android:background="@drawable/shape_strok_bottun"
+                    android:padding="8dp"
+                    android:layout_marginTop="0dp"
+                    android:inputType="number">
+                </com.google.android.material.textfield.TextInputEditText>
 
 
 
-
+            </LinearLayout>
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:layout_marginTop="6dp"
                 android:id="@+id/priceText"
+                android:visibility="gone"
                 android:text="Price"/>
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_margin="@dimen/margin3"
                 android:hint="350.000 Egp"
+                android:visibility="gone"
                 android:id="@+id/price"
                 android:background="@drawable/shape_strok_bottun"
                 android:padding="8dp"
@@ -291,178 +394,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="16dp"
                 android:id="@+id/descriptionText"
                 android:text="Description"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin3"
+                android:textAlignment="gravity"
+                android:gravity="start"
+                android:minHeight="60dp"
                 android:id="@+id/description"
                 android:background="@drawable/shape_strok_bottun"
                 android:padding="8dp"
                 android:inputType="text">
             </com.google.android.material.textfield.TextInputEditText>
 
-
-
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/textColor"
-                android:layout_marginTop="20dp"
-                android:id="@+id/ownerInformationText"
-                android:text="Owner information"/>
-
-
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#B33434"
-                android:layout_marginTop="20dp"
-                android:id="@+id/addCityText"
-                android:text="Add City"/>
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/spinner_city"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="6dp"
-                android:background="@drawable/shape_strok_bottun"
-                android:entries="@array/city" />
-
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#B33434"
-                android:layout_marginTop="10dp"
-                android:id="@+id/addAreaText"
-                android:text="Add Area"/>
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/spinner_area"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="6dp"
-                android:background="@drawable/shape_strok_bottun"
-                android:entries="@array/city" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#B33434"
-                android:id="@+id/nameText"
-                android:text="Name"/>
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="@dimen/margin3"
-                android:hint="Mohamed Farid"
-                android:id="@+id/nameInput"
-                android:background="@drawable/shape_strok_bottun"
-                android:padding="8dp"
-                android:inputType="text">
-            </com.google.android.material.textfield.TextInputEditText>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#B33434"
-                android:id="@+id/emailText"
-                android:text="Email"/>
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="@dimen/margin3"
-                android:hint="jodicar.com@gmail.com"
-                android:id="@+id/emailInput"
-                android:background="@drawable/shape_strok_bottun"
-                android:padding="8dp"
-                android:inputType="textEmailAddress">
-            </com.google.android.material.textfield.TextInputEditText>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#B33434"
-                android:id="@+id/phoneNumberText"
-                android:text="Phone Number"/>
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="@dimen/margin3"
-                android:hint="01xxxxxxxxx"
-                android:padding="8dp"
-                android:id="@+id/phoneNumberInput"
-                android:background="@drawable/shape_strok_bottun"
-                android:inputType="phone">
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#B33434"
-                android:id="@+id/contactMeText"
-                android:text="Contact me by"/>
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginBottom="5dp"
-                android:id="@+id/contactMeRadioGroup"
-                android:layout_height="wrap_content">
-
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:text="Phone"
-                    android:layout_margin="5dp"
-                    android:id="@+id/byPhone"
-                    android:layout_height="wrap_content"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:text="Email"
-                    android:id="@+id/byEmail"
-                    android:layout_margin="5dp"
-                    android:layout_height="wrap_content"/>
-
-
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:text="Both"
-                    android:id="@+id/byBoth"
-                    android:layout_margin="5dp"
-                    android:layout_height="wrap_content"/>
-
-            </RadioGroup>
-
             <Button
                 android:layout_width="match_parent"
                 android:id="@+id/btn_submit"
-                android:layout_marginBottom="50dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginBottom="32dp"
                 android:text="Submit"
                 android:backgroundTint="@color/colorAccent"
                 android:layout_height="70dp">
-
             </Button>
 
         </LinearLayout>
