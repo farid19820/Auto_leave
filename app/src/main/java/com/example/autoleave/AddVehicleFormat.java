@@ -37,17 +37,16 @@ private ActivityCarDetailsBinding binding ;
 
     public void saveData(View view) {
          int id=-1;
-         String price=binding.price.getText().toString();
-         String model=binding.model.getText().toString();
-         String gear_type=binding.gearType.getText().toString();
-         String year=binding.year.getText().toString();;
+         //String price=binding.price.getText().toString();
+       //  String model=binding.model.getText().toString();
+        // String year=binding.year.getText().toString();;
         // String killo_meters=binding.killometers.getText().toString();;
         // String engine_capacity=binding.engineCapacity.getText().toString();;
-         String color=binding.color.getText().toString();;
-         String body_type=binding.bodyType.getText().toString();;
-         String tyre_type=binding.tireType.getText().toString();;
-         String wheel=binding.wheel.getText().toString();;
-         String extra_features=binding.extraFeatures.getText().toString();;
+        // String color=binding.color.getText().toString();;
+        // String body_type=binding.bodyType.getText().toString();;
+         //String tyre_type=binding.tireType.getText().toString();;
+       //  String wheel=binding.wheel.getText().toString();;
+       //  String extra_features=binding.extraFeatures.getText().toString();;
         // car = new Car(id,price,model,gear_type,year,killo_meters,engine_capacity,
             //    color,body_type,tyre_type,wheel,extra_features);
          insertIntoDataBasa();

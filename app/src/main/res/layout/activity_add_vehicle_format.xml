@@ -68,14 +68,14 @@
             android:scrollbarDefaultDelayBeforeFade="450">
 
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_category"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:text="Details"
-
-                android:textSize="24sp"
-                android:textStyle="italic" />
+                android:layout_height="40dp"
+                android:layout_margin="6dp"
+                android:backgroundTint="#A6E8A9"
+                android:background="@drawable/shape_strok_bottun"
+                android:entries="@array/category"/>
 
 
             <com.example.autoleave.MyTextView
@@ -88,80 +88,90 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
-                android:text="Title"/>
+                android:id="@+id/brndText"
+                android:text="Brand"/>
 
-
-
-            <com.google.android.material.textfield.TextInputEditText
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_Brand"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="Car for Sale"
-                android:layout_margin="@dimen/margin4"
-                android:id="@+id/price"
-                android:inputType="text">
+                android:layout_margin="6dp"
+                android:background="@drawable/shape_strok_bottun"
+                android:entries="@array/brand" />
 
-            </com.google.android.material.textfield.TextInputEditText>
+
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
-                android:text="Price"/>
-
-
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_margin="@dimen/margin3"
-                android:hint="350.000 Egp"
-                android:id="@+id/model"
-                android:inputType="number">
-            </com.google.android.material.textfield.TextInputEditText>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#B33434"
+                android:id="@+id/modelText"
                 android:text="Model"/>
-            <com.google.android.material.textfield.TextInputEditText
+
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_Model"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_margin="@dimen/margin3"
-                android:hint="Volvo"
-                android:id="@+id/modelcar"
-                android:inputType="text">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_margin="6dp"
+                android:background="@drawable/shape_strok_bottun"
+                android:entries="@array/brand" />
+
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
-                android:text="Body Type"/>
-            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/styleText"
+                android:text="Style"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_StyleCar"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_margin="@dimen/margin3"
-                android:hint="Gear Type"
-                android:id="@+id/gear_type"
-                android:inputType="text">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_margin="6dp"
+                android:background="@drawable/shape_strok_bottun"
+                android:entries="@array/StyleCar" />
+
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:id="@+id/yearText"
                 android:text="Year"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_year"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/shape_strok_bottun"
+                android:entries="@array/year" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B33434"
+                android:id="@+id/kilometerText"
+                android:text="Kilometer"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_margin="@dimen/margin3"
-                android:hint="2019"
-                android:id="@+id/year"
+                android:hint="126000 km"
+                android:id="@+id/KilometerInput"
+                android:background="@drawable/shape_strok_bottun"
+                android:padding="8dp"
                 android:inputType="number">
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -170,6 +180,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:id="@+id/transsionTypeText"
                 android:text="Transmission Type"/>
             <RadioGroup
                 android:layout_width="match_parent"
@@ -181,39 +192,99 @@
                     android:layout_width="wrap_content"
                     android:text="Automatic"
                     android:layout_margin="5dp"
+                    android:id="@+id/auto"
                     android:layout_height="wrap_content"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:text="Manual"
+                    android:id="@+id/manual"
                     android:layout_margin="5dp"
                     android:layout_height="wrap_content"/>
-                 </RadioGroup>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B33434"
+                android:id="@+id/capacityText"
+                android:text="Capacity"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="1600 cc"
+                android:id="@+id/Capacity"
+                android:background="@drawable/shape_strok_bottun"
+                android:padding="8dp"
+                android:inputType="number">
+            </com.google.android.material.textfield.TextInputEditText>
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
-                android:text="Rental Option"/>
-            <RadioGroup
+                android:id="@+id/licenseExpireText"
+                android:text="License Expire"/>
+
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:id="@+id/rental"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutLicenseExpire"
+                android:orientation="horizontal">
 
-                <RadioButton
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_Date"
                     android:layout_width="wrap_content"
-                    android:text="Driver"
-                    android:layout_margin="5dp"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/shape_strok_bottun"
+                    android:entries="@array/month" />
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:text="Without Driver"
-                    android:layout_margin="5dp"
-                    android:layout_height="wrap_content"/>
-            </RadioGroup>
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_Year"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/shape_strok_bottun"
+                    android:entries="@array/year" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B33434"
+                android:id="@+id/priceText"
+                android:text="Price"/>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin3"
+                android:hint="350.000 Egp"
+                android:id="@+id/price"
+                android:background="@drawable/shape_strok_bottun"
+                android:padding="8dp"
+                android:inputType="number">
+            </com.google.android.material.textfield.TextInputEditText>
 
 
             <TextView
@@ -221,15 +292,31 @@
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
                 android:layout_marginTop="10dp"
+                android:id="@+id/descriptionText"
                 android:text="Description"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="120dp"
                 android:layout_margin="@dimen/margin3"
-                android:hint="Car Details"
-                android:id="@+id/color"
+                android:id="@+id/description"
+                android:background="@drawable/shape_strok_bottun"
+                android:padding="8dp"
                 android:inputType="text">
             </com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="20dp"
+                android:id="@+id/ownerInformationText"
+                android:text="Owner information"/>
+
+
 
 
             <TextView
@@ -237,27 +324,59 @@
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
                 android:layout_marginTop="20dp"
-                android:text="Add Location"/>
-            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addCityText"
+                android:text="Add City"/>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_city"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_margin="@dimen/margin3"
-                android:hint="Elharam"
-                android:id="@+id/body_type"
-                android:inputType="text">
-            </com.google.android.material.textfield.TextInputEditText>
+                android:layout_height="40dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/shape_strok_bottun"
+                android:entries="@array/city" />
+
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:layout_marginTop="10dp"
+                android:id="@+id/addAreaText"
+                android:text="Add Area"/>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_area"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/shape_strok_bottun"
+                android:entries="@array/city" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#B33434"
+                android:id="@+id/nameText"
                 android:text="Name"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_margin="@dimen/margin3"
                 android:hint="Mohamed Farid"
-                android:id="@+id/tire_type"
+                android:id="@+id/nameInput"
+                android:background="@drawable/shape_strok_bottun"
+                android:padding="8dp"
                 android:inputType="text">
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -265,13 +384,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:id="@+id/emailText"
                 android:text="Email"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_margin="@dimen/margin3"
                 android:hint="jodicar.com@gmail.com"
-                android:id="@+id/wheel"
+                android:id="@+id/emailInput"
+                android:background="@drawable/shape_strok_bottun"
+                android:padding="8dp"
                 android:inputType="textEmailAddress">
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -279,14 +401,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:id="@+id/phoneNumberText"
                 android:text="Phone Number"/>
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_margin="@dimen/margin3"
                 android:hint="01xxxxxxxxx"
-                android:id="@+id/extra_features"
+                android:padding="8dp"
+                android:id="@+id/phoneNumberInput"
+                android:background="@drawable/shape_strok_bottun"
                 android:inputType="phone">
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -295,11 +420,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#B33434"
+                android:id="@+id/contactMeText"
                 android:text="Contact me by"/>
             <RadioGroup
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginBottom="5dp"
+                android:id="@+id/contactMeRadioGroup"
                 android:layout_height="wrap_content">
 
 
@@ -307,24 +434,22 @@
                     android:layout_width="wrap_content"
                     android:text="Phone"
                     android:layout_margin="5dp"
-
+                    android:id="@+id/byPhone"
                     android:layout_height="wrap_content"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:text="Email"
+                    android:id="@+id/byEmail"
                     android:layout_margin="5dp"
                     android:layout_height="wrap_content"/>
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:text="Chat"
-                    android:layout_margin="5dp"
-                    android:layout_height="wrap_content"/>
+
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:text="Both"
+                    android:id="@+id/byBoth"
                     android:layout_margin="5dp"
                     android:layout_height="wrap_content"/>
 

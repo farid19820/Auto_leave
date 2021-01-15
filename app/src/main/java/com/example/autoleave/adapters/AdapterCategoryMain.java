@@ -20,20 +20,20 @@ public class AdapterCategoryMain extends RecyclerView.Adapter< AdapterCategoryMa
     @NonNull
     @Override
     public AdapterCategoryMain.categoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_categorymain,
-                null,false);
-        return new categoryViewHolder(view);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_categorymain,
+                parent,false);
+        return new categoryViewHolder(v);
     }
 
 
 
     @Override
     public void onBindViewHolder(@NonNull categoryViewHolder holder, int position) {
-        // from class name (HomeCarAll)
+        // from class name (itemCategoryMain)
         ItemCategoryMain icgm =itemCategoryMain.get(position);
-        holder.imgg.setImageResource(icgm.imageCategoryMain);
-        holder.tvv.setText(icgm.nameCategoryMain);
-        holder.counterCategoryMain.setText(icgm.counterCategoryMain);
+        holder.imgg.setImageResource(icgm.imgg);
+        holder.tvv.setText(icgm.tvv);
+        holder.item.setText(icgm.item);
 
     }
 
@@ -46,14 +46,14 @@ public class AdapterCategoryMain extends RecyclerView.Adapter< AdapterCategoryMa
     static class categoryViewHolder extends RecyclerView.ViewHolder {
         ImageView imgg;
         TextView  tvv;
-        TextView counterCategoryMain;
+        TextView item;
 
         public categoryViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imgg = itemView.findViewById(R.id.imageView3);
             tvv = itemView.findViewById(R.id.textView2);
-            counterCategoryMain = itemView.findViewById(R.id.textView3);
+            item = itemView.findViewById(R.id.textView3);
         }
     }
 
